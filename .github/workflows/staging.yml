@@ -191,7 +191,7 @@ jobs:
     # We sync the files in this directory to the staging
     # server. We use the `rsync` command to do this.
     # ======================================================
-    - uses: burnett01/rsync-deployments@23a557dceb19f9bb960ef40cf75cab5e9b37ec1f
+    - uses: burnett01/rsync-deployments@c04732dab25a8b2c000b7198a067bf26e93959e2
       name: 'Deploy to staging'
       with:
         switches: -avzr --delete
