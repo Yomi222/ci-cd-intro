@@ -205,7 +205,7 @@ jobs:
     # Once we have the new files synced to the staging server
     # we need to restart the staging server.
     # ======================================================
-    - uses: JimCronqvist/action-ssh@7737f1192ddd8376686e9d6354dea44592c942bf
+    - uses: JimCronqvist/action-ssh@d95a7435b565a2fedb9bf4100cdeb3342aa3cf16
       name: Execute SSH commmands on remote server
       with:
         hosts: '${{ secrets.REMOTE_USER }}@${{ steps.apply_output.outputs.stdout }}'
